@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SliderItemCell" customModule="SeaAquarium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="161"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_dummy_dive" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-Pl-BnS">
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="161"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3V-e8-VxD">
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="161"/>
+                        <color key="backgroundColor" name="colorOverlay"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't miss our  daily Dive Feeding" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbH-eY-2FG">
+                        <rect key="frame" x="20" y="55.666666666666657" width="251" height="57.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zbH-eY-2FG" secondAttribute="bottom" constant="48" id="4yK-Ga-iBx"/>
+                <constraint firstItem="G3V-e8-VxD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7TV-YG-yft"/>
+                <constraint firstAttribute="trailing" secondItem="SQK-Pl-BnS" secondAttribute="trailing" id="JZH-o9-vj5"/>
+                <constraint firstItem="zbH-eY-2FG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Los-Nl-Mat"/>
+                <constraint firstItem="G3V-e8-VxD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OHl-gm-7w7"/>
+                <constraint firstAttribute="trailing" secondItem="zbH-eY-2FG" secondAttribute="trailing" constant="20" id="OOE-hA-kzj"/>
+                <constraint firstItem="SQK-Pl-BnS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZcT-39-hSc"/>
+                <constraint firstItem="SQK-Pl-BnS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gVW-0o-yFd"/>
+                <constraint firstAttribute="trailing" secondItem="G3V-e8-VxD" secondAttribute="trailing" id="qCB-ot-eib"/>
+                <constraint firstAttribute="bottom" secondItem="SQK-Pl-BnS" secondAttribute="bottom" id="vqM-kR-K0b"/>
+                <constraint firstAttribute="bottom" secondItem="G3V-e8-VxD" secondAttribute="bottom" id="zEb-Dm-tcI"/>
+            </constraints>
+            <size key="customSize" width="291" height="161"/>
+            <point key="canvasLocation" x="174.80916030534351" y="58.802816901408455"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_dummy_dive" width="1000" height="667"/>
+        <namedColor name="colorOverlay">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.25183780177109905" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

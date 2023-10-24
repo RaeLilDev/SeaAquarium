@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailSliderItemCell" customModule="SeaAquarium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="258" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_alligator" translatesAutoresizingMaskIntoConstraints="NO" id="B7b-wP-uxY">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="115"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8U-fE-v3h">
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="115"/>
+                        <color key="backgroundColor" name="colorOverlay"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="V8U-fE-v3h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3Ta-7p-MgA"/>
+                <constraint firstItem="B7b-wP-uxY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ArG-UI-MeI"/>
+                <constraint firstAttribute="trailing" secondItem="B7b-wP-uxY" secondAttribute="trailing" id="FH9-aF-iWr"/>
+                <constraint firstAttribute="bottom" secondItem="V8U-fE-v3h" secondAttribute="bottom" id="NFh-0P-tbC"/>
+                <constraint firstAttribute="trailing" secondItem="V8U-fE-v3h" secondAttribute="trailing" id="Ufn-9f-xQ6"/>
+                <constraint firstItem="V8U-fE-v3h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h7R-x4-kAu"/>
+                <constraint firstAttribute="bottom" secondItem="B7b-wP-uxY" secondAttribute="bottom" id="niV-PC-rEO"/>
+                <constraint firstItem="B7b-wP-uxY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yq5-CZ-aUT"/>
+            </constraints>
+            <size key="customSize" width="258" height="115"/>
+            <connections>
+                <outlet property="ivCover" destination="B7b-wP-uxY" id="Pnv-68-fdZ"/>
+                <outlet property="viewOverlay" destination="V8U-fE-v3h" id="eOi-YP-3S4"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="42.605633802816904"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_alligator" width="1280" height="720"/>
+        <namedColor name="colorOverlay">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.25183780177109905" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
